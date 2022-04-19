@@ -1,0 +1,20 @@
+main{background-color: rgb(240, 204, 181);}
+
+
+
+#frmDangKy{
+    margin: 0 auto;
+    padding:20px;
+    margin-top: 50px;
+}
+form{
+    margin:0 auto;
+}
+#frmDangKy button {
+    margin-top: 20px;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+#errpass-sign,#errmail-sign,#erruser-sign,#errname-sign{color:red}

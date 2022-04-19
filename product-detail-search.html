@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>gd2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./respo.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/c09a7cae45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div><a href="./index.html"><h2 class="hd1">MY SHOP</h2></a></div>
+            <div><button class="dropbtn" >ABOUT</button></div>
+            <div><button class="dropbtn" >NEWS</button></div>
+            <div><button class="dropbtn" >CONTACT</button></div>
+            <div>
+              <button class="dropbtn" type="button" class="btn btn-primary" data-bs-toggle="modal" id ="btn-create" data-bs-target="#frmlogin">SIGN IN</button>
+            </div>
+            <div><input id="search-product" type="text" placeholder=" SEARCH"></div>
+            <button id='srch-prod' onclick="search_products()"></button>
+          </div>
+      </header>
+    <main>
+      
+      <div class="modal fade" id="frmlogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Login</h3> 
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="frmProductCreate">
+                
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="username1" aria-describedby="emailHelp">
+              <p id="errname-login"></p>
+            </div>
+          
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password1">
+              <p id="errpass-login"></p>
+            </div>
+            <button  class="btn btn-primary btn-submit">login</button>
+            <div>
+              <a class="btn btn-link" href="./sign.html">create a account</a>
+            </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="gd1">
+        <div class="slide-show">
+          <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <img src="https://cdn0.fahasa.com/media/magentothem/banner7/SHOPEEPAY_THANG4_840_x_320.jpg" style="width:100%">
+                
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="https://cdn0.fahasa.com/media/magentothem/banner7/840x320_1.png" style="width:100%">
+                
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="https://cdn0.fahasa.com/media/magentothem/banner7/disney-resize-840x320-t4.jpg" style="width:100%">
+                
+              </div>
+              <div style="text-align:center;height:0px" >
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+              </div>
+              
+              
+      </div>
+      <div class="slider-right">
+          <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-04-2022/MonthlySale_T4_bo1__392x156.jpg" alt="">
+          <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-03-2022/392x156_manga.jpg" alt="">
+      </div>
+      </div>
+      
+      
+      <div id="products1">
+        <div class="items">
+          <div class="item">
+            <div class="item- thumb">
+              <img src="data:image/jpeg;base64,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" alt=''>
+                  
+              </div>
+              <h4 class="item-title"> iphone</h4>
+              <div class="item-price">
+                  <span class="item-price-origin">5000000 đ</span>
+                  <span class="item-price-sale">4000000 đc</span>
+              <button class= "btn btn-primary"> Đưa vào giỏ hàng </button>
+              </div>
+          </div>
+          
+          
+          
+           
+          
+      </div>
+      </div>
+      <div></div>
+  </main>
+  <footer>
+    <marquee behavior="" direction="">Giấy chứng nhận Đăng ký Kinh doanh số **0304132047** do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 28/11/2012.</marquee>
+  </footer>
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src='main.js'></script>
+  <script src="./products-local.js"></script>
+  <!-- <script src="./products-out.js"></script> -->
+  <script src="./products-outsearch.js"></script>
+  <script>
+  </script>
+</body>
+</html>

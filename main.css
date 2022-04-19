@@ -1,0 +1,137 @@
+main{
+    margin:  0 auto;
+    background-color: aliceblue;
+    clear: both;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 0px;
+  width: 0px;
+  margin:0 3px  ;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.slide-show{
+    margin-top: 40px;
+    width:67%;
+    float:left;
+    padding-right: 5px;
+}
+.slider-right{margin-top: 35px;
+  width:32%;
+  float:right;
+  border-left: 1px solid gray;
+}
+.slider-right img{
+  width: 100%;
+  margin-top: 3px;
+  border-radius:15px ;
+}
+.gd1{display: inline-block;clear:both;margin-top: 35px;}
+.errpass-login, .errname-login {color:red}
+
+
+#products {
+  margin:0 auto;
+  float:left;
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+#products .items{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+#products .items .item{
+  border: 1px solid #ddd;
+  box-shadow: 1px 2px 4px #ddd;
+  padding:5px;
+  border-radius: 5px;
+  height:450px;
+}
+#products .items .item img{
+  width: 100%;
+}
+.btn{ border:none}
+#product-detail{
+  width:100%;
+  display: block;
+}
+#product-detail img{
+  width:100%;
+  float:left;
+}
+.card-body{
+  width:49%;
+  float:right;
+  box-shadow: 1px 1px 1px #ddd;height: 100%;
+}
+.card-price{color:red;}
+.item-thumb{ height: 50%; box-shadow: 1px 1px 1px #ddd;}
+.item-thumb img{max-height: 100%;  max-width: 100%;object-fit: contain}
+.item-title{
+  height: 8%;
+}
+#product-detail1{
+  background-color: aquamarine;
+}
+.card1{
+  background-color: aquamarin
+  e;}
+.card1 img{width: 45%;float:left}
+.card1 .card-body1{width:50%; float:left}
+img.product-img-table{width: 50%;}

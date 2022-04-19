@@ -1,0 +1,26 @@
+@media only screen and (max-width: 940px) {
+    header{
+        font-size: 12px;
+        height: 40px;
+    }
+    header .dropbtn{
+        font-size: 15px;
+        
+        height: 20px;
+    }
+    header h2{ font-size: 17px;}
+    .gd1{ margin-top: 0px;}
+    #products .items .item{
+        font-size: 1%;
+        height:270px;
+      }
+      .card-price{color:red; font-size: 10px;}
+      .item-thumb{ height: 60%; box-shadow: 1px 1px 1px #ddd;}
+      button.btn.btn-primary{width:100%;height: 30px;font-size: 13px;}
+      h5.item-title{font-size: 10px;}
+      span.item-price-origin{ font-size: 9px;}
+      .item-thumb img{max-height: 100%;  max-width: 100%;object-fit: contain}
+      .item-title{
+        height: 15%;
+      }
+  }
